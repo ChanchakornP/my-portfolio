@@ -38,31 +38,32 @@
   }
 }
 
-.footer {
-  margin-top: auto;
-  /* Push footer to the bottom */
-  background-color: #343a40;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-}
 
 .app-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  /* Ensure it spans the full viewport height */
+  background-image: url('./Assets/home-bg.jpg');
+  background-size: cover;
+  /* Ensures the image covers the entire area */
+  background-position: center;
+  /* Centers the image */
+  background-repeat: no-repeat;
+  /* Prevents the image from repeating */
+}
+
+.header {
+  position: sticky;
+  top: 0;
 }
 
 .footer {
-  text-align: center;
-  padding: 10px 0;
-  margin-top: auto;
-  /* Push footer to the bottom when content is short */
+  position: sticky;
+  bottom: 0;
 }
 
-.home-section {
-  position: relative;
-  background-image: url(./Assets/home-bg.jpg);
-  background-size: cover;
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

@@ -12,10 +12,11 @@ import { Container, Image } from 'react-bootstrap';
 
 function App() {
   return (
-    <Container fluid className="home-section" id="home">
-      <div className="app-container">
+    <div className="app-container">
+      <Container fluid className="home-section" id="home">
         <BrowserRouter>
           <Header />
+          {/* <div className="app-container"> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/project" element={<Projects />} />
@@ -23,10 +24,11 @@ function App() {
             <Route path="/resume" element={<Resume />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
+          {/* </div > */}
           <Footer />
         </BrowserRouter>
-      </div >
-    </Container>
+      </Container>
+    </div>
   );
 }
 
