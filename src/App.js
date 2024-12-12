@@ -16,7 +16,6 @@ function App() {
       <Container fluid className="home-section" id="home">
         <BrowserRouter>
           <Header />
-          {/* <div className="app-container"> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/project" element={<Projects />} />
@@ -24,7 +23,6 @@ function App() {
             <Route path="/resume" element={<Resume />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
-          {/* </div > */}
           <Footer />
         </BrowserRouter>
       </Container>
