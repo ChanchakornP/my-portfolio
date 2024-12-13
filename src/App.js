@@ -10,7 +10,6 @@ import Navigate from './components/Navigate';
 import './App.css';
 import { Container, Image } from 'react-bootstrap';
 import './custom.scss';
-
 function App() {
   return (
     <div className="app-container">

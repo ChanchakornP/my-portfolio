@@ -1,19 +1,22 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState, useContext, useEffect } from "react";
 
 // Create the context
 const ThemeContext = createContext();
 
 // Create a provider component
 export const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState("light");
+    const [theme, setTheme] = useState("dark");
 
-    // Function to toggle the theme
     const toggleTheme = () => {
         const newTheme = theme === "light" ? "dark" : "light";
-        setTheme(newTheme);
-        document.documentElement.setAttribute("data-bs-theme", newTheme); // Updates Bootstrap theme
-
+        setTheme(newTheme);  // Update state
+        document.documentElement.setAttribute("data-bs-theme", newTheme);  // Update global theme on <html> element
     };
+
+    useEffect(() => {
+        setTheme("dark");
+        document.documentElement.setAttribute("data-bs-theme", "dark");
+    }, []);
 
     return (
         <ThemeContext.Provider value={{ theme, toggleTheme }}>

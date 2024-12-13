@@ -22,11 +22,10 @@ function Header() {
                     }}
                 >
                     <FontAwesomeIcon
-                        icon={theme === "light" ? faMoon : faSun}
-                        style={{ color: theme === "light" ? "#000" : "#FFD700" }}
+                        icon={theme === "light" ? faSun : faMoon}
+                        style={{ color: theme === "light" ? "rgb(238, 93, 20)" : "#FFD700" }}
                     />
                 </button>
-
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">

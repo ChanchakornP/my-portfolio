@@ -1,8 +1,9 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import homeLogo from "../logo.svg"
+import TypingAnimation from "./TypingAnimation";
 function Home() {
     return (
-        <Container className="home" id="home">
+        <Container className="home" id="home" maxWidth="sm">
             <Row>
                 <Col md={8} className="home-header">
                     <h1 style={{ paddingTop: 15 }} className="heading">
@@ -22,6 +23,11 @@ function Home() {
                         className="img-fluid"
                         style={{ maxHeight: "450px" }}
                     />
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <TypingAnimation ></TypingAnimation>
                 </Col>
             </Row>
         </Container>
