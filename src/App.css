@@ -40,16 +40,11 @@
 
 
 .app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   background-image: url('./Assets/home-bg.jpg');
   background-size: cover;
-  /* Ensures the image covers the entire area */
   background-position: center;
-  /* Centers the image */
   background-repeat: no-repeat;
-  /* Prevents the image from repeating */
+  background-attachment: fixed;
 }
 
 .header {
@@ -63,11 +58,20 @@
 }
 
 .home {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
 }
 
 .home-header {
   padding-top: 80px !important;
+}
+
+.bg-primary {
+  background-color: purple !important;
+  /* Override the primary background color */
+}
+
+.text-primary {
+  color: purple !important;
+  /* Override the primary text color */
 }
