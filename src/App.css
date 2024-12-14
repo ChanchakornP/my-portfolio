@@ -1,4 +1,4 @@
-.app-container {
+.app-container-dark {
   background-image: url('./Assets/home-bg.jpg');
   background-size: cover;
   background-position: center;
@@ -6,6 +6,10 @@
   background-attachment: fixed;
 }
 
+.app-container-light {
+  background: linear-gradient(to right, #fdf5dd, #ffffff);
+  color: black;
+}
 
 .footer {
   position: sticky;
@@ -26,4 +30,18 @@
 .header {
   position: sticky;
   top: 0;
+}
+
+.border-right {
+  border-right: 1px solid #ccc;
+  padding-right: 15px;
+}
+
+.border-left {
+  border-left: 1px solid #ccc;
+  padding-left: 15px;
+}
+
+.mb-4 {
+  margin-bottom: 2.5rem;
 }

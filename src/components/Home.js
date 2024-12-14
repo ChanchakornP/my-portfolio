@@ -15,7 +15,16 @@ function Home() {
                         <strong className="main-name"> CHANCHAKORN PATTANA</strong>
                     </h1>
                 </Col>
-
+            </Row>
+            <Row>
+                <Col md={8}>
+                    <TypingAnimation strings={[
+                        'Computer Science Student',
+                        'Machine Learning Engineer',
+                        'Electrical Engineer'
+                    ]}
+                    ></TypingAnimation>
+                </Col>
                 <Col md={4} style={{ paddingBottom: 20 }}>
                     <img
                         src={homeLogo}
@@ -23,11 +32,6 @@ function Home() {
                         className="img-fluid"
                         style={{ maxHeight: "450px" }}
                     />
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <TypingAnimation ></TypingAnimation>
                 </Col>
             </Row>
         </Container>

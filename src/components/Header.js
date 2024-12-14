@@ -3,12 +3,10 @@ import { useTheme } from "../ThemeContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
-
 function Header() {
     const { theme, toggleTheme } = useTheme();
-
     return (
-        <Navbar bg={theme === "dark" ? "dark" : "light"} expand="lg" fixed="top">
+        <Navbar bg={theme === "dark" ? "dark" : "light"} expand="lg" fixed="top" >
             <Container>
                 <Navbar.Brand href="/">Portfolio</Navbar.Brand>
                 <button
@@ -37,7 +35,7 @@ function Header() {
                     </Nav>
                 </Navbar.Collapse>
             </Container>
-        </Navbar>
+        </Navbar >
     )
 }
 

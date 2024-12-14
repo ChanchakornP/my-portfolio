@@ -1,15 +1,13 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 
-const TypingAnimation = () => {
+const TypingAnimation = (props) => {
+    const { strings } = props;
     return (
         <div>
             <Typewriter
                 options={{
-                    strings: ['Computer Science Student',
-                        'Machine Learning Engineer',
-                        'Electrical Engineer',
-                    ],
+                    strings: strings,
                     autoStart: true,
                     loop: true,
                     delay: 75,
