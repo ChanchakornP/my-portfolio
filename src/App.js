@@ -16,10 +16,10 @@ function App() {
 
   return (
     <div className={theme == "dark" ? "app-container-dark" : "app-container-light"}>
+      <Header />
       <Container fluid className="home-section" id="home">
         <BrowserRouter>
-          <Container>
-            <Header />
+          <Container className="main">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/project" element={<Projects />} />
@@ -27,10 +27,10 @@ function App() {
               <Route path="/resume" element={<Resume />} />
               <Route path="*" element={<Navigate to="/" />} />
             </Routes>
-            <Footer />
           </Container>
         </BrowserRouter>
       </Container>
+      <Footer />
     </div>
   );
 }

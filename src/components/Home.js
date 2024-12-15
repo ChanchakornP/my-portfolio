@@ -1,6 +1,7 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import homeLogo from "../logo.svg"
 import TypingAnimation from "./TypingAnimation";
+
 function Home() {
     return (
         <Container className="home" id="home" maxWidth="sm">
