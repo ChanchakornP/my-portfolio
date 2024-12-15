@@ -42,6 +42,31 @@
   top: 0;
 }
 
+.education-header,
+.work-header {
+  position: relative;
+  /* Enables absolute positioning for the logo */
+  display: flex;
+  /* Keeps the text inline with its container */
+  align-items: center;
+  /* Ensures text is vertically aligned */
+}
+
+.work-logo {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.edu-logo {
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
 .border-right {
   border-right: 1px solid #ccc;
   padding-right: 15px;
@@ -53,6 +78,7 @@
 }
 
 
+.work-item,
 .education-item {
   margin-bottom: 50px;
 }
