@@ -8,7 +8,10 @@ import nextyLogo from "../Assets/nexty-logo.webp"
 import maximLogo from "../Assets/maxim-logo.jpg"
 import cmuLogo from "../Assets/cmu-logo.png"
 import usydLogo from "../Assets/usyd-logo.png"
-
+import { PiCertificateFill } from "react-icons/pi";
+import deepLearningCert from "../Assets/certificates/deep-learning.png"
+import superAICert from "../Assets/certificates/superAI.png"
+import superAIKaggle from "../Assets/certificates/superAIKaggle.png"
 function About() {
     return (
         <Container className="home" id="home" maxWidth="sm">
@@ -133,6 +136,44 @@ function About() {
                 </Col>
                 <Col md={4} className="border-left pl-3">
                     <h2>Education <GiOpenBook /></h2>
+                </Col>
+            </Row>
+            <Row className="certificate-section">
+                <Col md={4} className="border-right pr-3">
+                    <h2>Certificate <PiCertificateFill /></h2>
+                </Col>
+                <Col md={8}>
+                    <div className="certificate-item">
+                        <h2> Deep Learning Specialist</h2>
+                        <img src={deepLearningCert} style={{ maxWidth: "600px" }}></img>
+                        <h3> Including courses </h3>
+                        <ul>
+                            <li>Neural Networks and Deep Learning</li>
+                            <li>Improving Deep Neural Networks</li>
+                            <li>Structuring Machine Learning Projects</li>
+                            <li>Convolution Neural Networks</li>
+                            <li>Sequence Models</li>
+                        </ul>
+                    </div>
+                    <div className="certificate-item">
+                        <h2> SuperAI Engineer</h2>
+                        <img src={superAICert} style={{ maxWidth: "600px" }}></img>
+                        <p> AI Boostcamp hosted by Sirindhorn International Institute of Technology, focusing on data and AI model
+                            applications across various domains such as digital signal processing, natural language processing, robotics,
+                            image processing, and data science. Engaging weekly intense hackathon events, applying AI techniques to
+                            solve real problems. </p>
+                        <ul>
+                            <li>Digit Classification</li>
+                            <li>Adaptive Maintainance</li>
+                            <li>House Grade Classification</li>
+                            <li>Trading Algorithm</li>
+                            <li>Named Entity Recognition</li>
+                            <li>Thai Food Labeling</li>
+                            <li>N-gram model</li>
+                        </ul>
+                        <p> Here is a ranking for some hackathons.</p>
+                        <img src={superAIKaggle} style={{ maxWidth: "600px" }}></img>
+                    </div>
                 </Col>
             </Row>
         </Container>

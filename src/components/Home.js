@@ -1,5 +1,5 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
-import homeLogo from "../logo.svg"
+import homeLogo from "../Assets/home-main.svg"
 import TypingAnimation from "./TypingAnimation";
 import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3, IoLogoPython, IoLogoDocker } from "react-icons/io5";
 import { FaJava } from "react-icons/fa6";
@@ -24,23 +24,25 @@ function Home() {
                         I'M
                         <strong className="main-name"> CHANCHAKORN PATTANA</strong>
                     </h1>
-                </Col>
-            </Row>
-            <Row>
-                <Col md={8}>
+
                     <TypingAnimation strings={[
                         'Computer Science Student',
                         'Machine Learning Engineer',
                         'Electrical Engineer'
                     ]}
                     ></TypingAnimation>
+
                 </Col>
+
                 <Col md={4} style={{ paddingBottom: 20 }}>
                     <img
                         src={homeLogo}
                         alt="home pic"
                         className="img-fluid"
-                        style={{ maxHeight: "450px" }}
+                        style={{
+                            maxHeight: "450px",
+                            'margin-top': '100px',
+                        }}
                     />
                 </Col>
             </Row>
@@ -50,9 +52,9 @@ function Home() {
                     <Row className="mb-4">
                         <Col md={4}>
                             <Card
-                                bg={'dark'}
+                                bg={theme === 'dark' ? 'dark' : 'white'}
                                 key={'dark'}
-                                text={'dark' === 'light' ? 'dark' : 'white'}
+                                text={theme === 'light' ? 'dark' : 'white'}
                                 style={{ width: '18rem' }}
                                 className="mb-2 project-card-view"
                             >
@@ -60,9 +62,9 @@ function Home() {
                                 <Card.Body>
                                     <Card.Text>
                                         <ListGroup variant="flush">
-                                            <ListGroup.Item>Python</ListGroup.Item>
-                                            <ListGroup.Item>Java</ListGroup.Item>
-                                            <ListGroup.Item>JavaScript</ListGroup.Item>
+                                            <ListGroup.Item>Python <IoLogoPython /></ListGroup.Item>
+                                            <ListGroup.Item>Java <FaJava /></ListGroup.Item>
+                                            <ListGroup.Item>JavaScript <IoLogoJavascript /></ListGroup.Item>
                                         </ListGroup>
                                     </Card.Text>
                                 </Card.Body>
@@ -70,9 +72,9 @@ function Home() {
                         </Col>
                         <Col md={4}>
                             <Card
-                                bg={'dark'}
+                                bg={theme === 'dark' ? 'dark' : 'white'}
                                 key={'dark'}
-                                text={'dark' === 'light' ? 'dark' : 'white'}
+                                text={theme === 'light' ? 'dark' : 'white'}
                                 style={{ width: '18rem' }}
                                 className="mb-2 project-card-view"
                             >
@@ -90,9 +92,9 @@ function Home() {
                         </Col>
                         <Col md={4}>
                             <Card
-                                bg={'dark'}
+                                bg={theme === 'dark' ? 'dark' : 'white'}
                                 key={'dark'}
-                                text={'dark' === 'light' ? 'dark' : 'white'}
+                                text={theme === 'light' ? 'dark' : 'white'}
                                 style={{ width: '18rem' }}
                                 className="mb-2 project-card-view"
                             >
@@ -119,9 +121,9 @@ function Home() {
                     <Row>
                         <Col md={4}>
                             <Card
-                                bg={'dark'}
+                                bg={theme === 'dark' ? 'dark' : 'white'}
                                 key={'dark'}
-                                text={'dark' === 'light' ? 'dark' : 'white'}
+                                text={theme === 'light' ? 'dark' : 'white'}
                                 style={{ width: '18rem' }}
                                 className="mb-2 project-card-view"
                             >
@@ -140,9 +142,9 @@ function Home() {
                         </Col>
                         <Col md={4}>
                             <Card
-                                bg={'dark'}
+                                bg={theme === 'dark' ? 'dark' : 'white'}
                                 key={'dark'}
-                                text={'dark' === 'light' ? 'dark' : 'white'}
+                                text={theme === 'light' ? 'dark' : 'white'}
                                 style={{ width: '18rem' }}
                                 className="mb-2 project-card-view"
                             >
@@ -161,9 +163,9 @@ function Home() {
                         </Col>
                         <Col md={4}>
                             <Card
-                                bg={'dark'}
+                                bg={theme === 'dark' ? 'dark' : 'white'}
                                 key={'dark'}
-                                text={'dark' === 'light' ? 'dark' : 'white'}
+                                text={theme === 'light' ? 'dark' : 'white'}
                                 style={{ width: '18rem' }}
                                 className="mb-2 project-card-view"
                             >
