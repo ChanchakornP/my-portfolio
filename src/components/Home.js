@@ -32,6 +32,18 @@ function Home() {
                     ]}
                     ></TypingAnimation>
 
+                    <div className="home-paragraph">
+                        <p>I am a machine learning engineer with a couple of years of experience in Thailand, specializing in deep learning projects.
+                            My expertise spans the entire project lifecycle, from gathering requirements to deployment.
+                            I have hands-on experience in optimizing large-scale models and implementing distributed training.
+                            <br>
+                            </br>
+                            <br>
+                            </br>
+                            Currently, I am pursuing a Master of Computer Science at The University of Sydney, aiming to deepen my technical knowledge and advance my skills further.
+                        </p>
+
+                    </div>
                 </Col>
 
                 <Col md={4} style={{ paddingBottom: 20 }}>
@@ -47,7 +59,7 @@ function Home() {
                 </Col>
             </Row>
             <Row>
-                <Container className="tech-stack-section my-5">
+                <Container className="tech-stack-section" style={{ "margin-top": "200px", "margin-bottom": "100px" }}>
                     <h2 className="text-center mb-4">My Tech Stack</h2>
                     <Row className="mb-4">
                         <Col md={4}>
