@@ -2,7 +2,7 @@
 ![home](imgs/home.png)
 ![edu](imgs/edu.png)
 
-This project showcases my skills, projects, and achievements as a Machine Learning Engineer. The website is hosted on Vercel and can be accessed at [Portfolio](http://) URL.
+This project showcases my skills, projects, and achievements as a Machine Learning Engineer. The website is hosted on Vercel and can be accessed at [Portfolio](https://my-portfolio-ten-opal-40.vercel.app/) URL.
 
 
 ## Getting Started
