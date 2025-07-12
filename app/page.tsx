@@ -7,7 +7,9 @@ export default async function Home() {
   return (
     <div>
       <PageHero />
-      <AchievementPlaylist />
+      <div className="flex justify-center">
+        <AchievementPlaylist />
+      </div>
     </div>
   );
 }

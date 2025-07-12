@@ -20,7 +20,7 @@ export const PageHero = () => {
             radius: "full",
             variant: "shadow",
           })}
-          href="/invest"
+          href="/about"
         >
           VIEW MY PROFILE
         </Link>

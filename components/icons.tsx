@@ -359,3 +359,21 @@ export const PlayIcon = ({ size = 24, width, height, ...props }: IconProps) => {
     </svg>
   );
 };
+
+export const LinkedInIcon: React.FC<IconSvgProps> = ({
+  size = 24,
+  strokeWidth = 1.5,
+  ...props
+}) => (
+  <svg
+    width={size}
+    height={size}
+    strokeWidth={strokeWidth}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path d="M4.98 3.5C4.98 4.6 4.1 5.5 3 5.5S1 4.6 1 3.5 1.9 1.5 3 1.5s1.98.9 1.98 2ZM1 8.5h4v13H1v-13ZM7.5 8.5h3.7v1.7h.1c.5-.9 1.6-1.9 3.3-1.9 3.5 0 4.1 2.3 4.1 5.2v8h-4v-7.1c0-1.7-.1-3.8-2.3-3.8s-2.7 1.8-2.7 3.7v7.2h-4V8.5Z" />
+  </svg>
+);
