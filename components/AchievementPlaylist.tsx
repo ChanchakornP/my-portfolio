@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { AchievementCard } from "./AchievementCard";
-import { achievementConfig } from "@/config/site";
+import { achievementConfig } from "@/config/achievement";
 const SLIDE_DURATION_SECONDS = 5;
 
 

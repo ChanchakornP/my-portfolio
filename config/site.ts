@@ -40,16 +40,3 @@ export const siteConfig = {
     linkedin: "https://linkedin.com/in/chanchakornp",
   },
 };
-
-export const achievementConfig = [
-  {
-    title: "Deep Learning Certificate",
-    subtitle: "Test",
-    image: "/certificates/Deep Learning.png",
-  },
-  {
-    title: "SuperAI Engineer",
-    subtitle: "Test",
-    image: "/certificates/SuperAI Certificate.png",
-  },
-];
